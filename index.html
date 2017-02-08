@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Route Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 5px;
+      }
+      #map {
+        height: 80%;
+      }
+      table td {
+        vertical-align: top;
+        padding-top: 5px;
+      }
+      #controls{
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="controls">
+      <button id="draw-button" class="btn btn-primary">Draw</button>
+      <table width="500">
+        <tr>
+          <td width="50%">Routes&nbsp;<button class="add_lines_button">More</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="input_lines_wrap"><div><input type="text" name="lines[]"></div></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgaxynZjLFqhnjGqpJZlO5RK0vbYg2gxs&callback=initMap&libraries=geometry"></script>
+</html>
